@@ -1,5 +1,8 @@
-
 'use strict';
-require('../module.js');
 require('./index.css');
-console.log("index");
+require('page/common/header/header');
+require('page/common/nav/nav.js');
+var _common = require('util/commonUtils.js');
+
+
+

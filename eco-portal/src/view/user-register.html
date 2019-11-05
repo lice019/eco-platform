@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%=require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+
+<body>
+<%=require('html-loader!./layout/nav-simple.html') %>
+<div class="register-wrap">
+    <!--定宽-->
+    <div class="w">
+        <div class="register-con">
+            <div class="register-title">新用户注册</div>
+            <div class="register-box">
+                <!--用户名username-->
+                <div class="register-item">
+                    <label class="register-label" for="username">
+                        <i class="fa fa-user"></i>
+                    </label>
+                    <input class="register-content" id="username" placeholder="输入用户名" autocomplete="off"/>
+                </div>
+                <!--密码password-->
+                <div class="register-item">
+                    <label class="register-label" for="password">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input class="register-content" id="password" type="password" placeholder="输入密码" autocomplete="off"/>
+                </div>
+                <!--再次确认密码-->
+                <div class="register-item">
+                    <label class="register-label" for="password-confirm">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input class="register-content" id="password-confirm" type="password" placeholder="再输入密码" autocomplete="off"/>
+                </div>
+                <!--输入手机号phone-->
+                <div class="register-item">
+                    <label class="register-label" for="phone">
+                        <i class="fa fa-phone"></i>
+                    </label>
+                    <input class="register-content" id="phone" placeholder="输入手机号" autocomplete="off"/>
+                </div>
+                <!--邮箱email-->
+                <div class="register-item">
+                    <label class="register-label" for="email">
+                        <i class="fa fa-envelope"></i>
+                    </label>
+                    <input class="register-content" id="email" placeholder="输入邮箱" autocomplete="off"/>
+                </div>
+                <!--密码提示问题-->
+                <div class="register-item">
+                    <label class="register-label" for="question">
+                        <i class="fa fa-question"></i>
+                    </label>
+                    <input class="register-content" id="question" placeholder="输入密码提示问题" autocomplete="off"/>
+                </div>
+                <!--密码提示答案-->
+                <div class="register-item">
+                    <label class="register-label" for="answer">
+                        <i class="fa fa-key"></i>
+                    </label>
+                    <input class="register-content" id="answer" placeholder="输入密码提示答案" autocomplete="off"/>
+                </div>
+                <!--登录错误提示语-->
+                <div class="error-item">
+                    <i class="fa fa-minus-circle error-icon"></i>
+                    <p class="error-msg">ERROR</p>
+                </div>
+                <!--按钮-->
+                <button class="register-btn" id="register-submit">立即注册</button>
+                <div class="link-item">
+                    <a href="./user-login.html" class="link">已有帐号，去登录>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%=require('html-loader!./layout/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/**顶头导航样式**/
+
+.nav {
+    background: #dddddd;
+    height: 30px;
+    line-height: 30px;
+}
+
+/**左边用户**/
+.nav .user {
+    float: left;
+}
+
+.nav .user.login {
+    display: none;
+}
+
+.nav .user .link {
+    margin-right: 7px;
+}
+
+
+/**右边导航**/
+.nav .nav-list {
+    float: right;
+}
+
+.nav .nav-list .nav-item {
+    display: inline-block;
+
+}
+
+.nav .nav-list .nav-item .link {
+    margin-left: 8px;
+}
+

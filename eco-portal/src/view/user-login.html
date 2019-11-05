@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%=require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+
+<body>
+
+
+<%=require('html-loader!./layout/nav-simple.html') %>
+<div class="page-wrap">
+    <!--定宽-->
+    <div class="w">
+        <div class="user-con">
+            <div class="user-title">用户登录</div>
+            <div class="user-box">
+                <!--用户名username-->
+                <div class="user-item">
+                    <label class="user-label" for="username">
+                        <i class="fa fa-user"></i>
+                    </label>
+                    <input class="user-content" id="username" placeholder="输入用户名" autocomplete="off"/>
+                </div>
+                <!--用户密码password-->
+                <div class="user-item">
+                    <label class="user-label" for="password">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input class="user-content" id="password" type="password" placeholder="输入密码" autocomplete="off"/>
+                </div>
+                <!--登录错误提示语-->
+                <div class="error-item">
+                    <i class="fa fa-minus-circle error-icon"></i>
+                    <p class="error-msg">ERROR</p>
+                </div>
+                <!--按钮-->
+                <button class="login-btn" id="login-submit">登录</button>
+                <!--找回密码和注册连接-->
+                <div class="link-item">
+                    <a href="./user-pass-reset.html" target="_blank" class="link">忘记密码</a>
+                    <a href="./user-register.html" target="_blank" class="link">立即注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<%=require('html-loader!./layout/footer.html') %>
+
+</body>
+</html>

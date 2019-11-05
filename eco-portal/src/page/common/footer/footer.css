@@ -1,0 +1,27 @@
+/**通用footer每个页面需要**/
+
+.footer{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    /*height: 100px;*/
+    background: #ffffff;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*margin-bottom: -100px;*/
+    /*clear: both;*/
+
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}

@@ -1,0 +1,101 @@
+/*通用样式*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+    background: #f6f6f6;
+    font: 12px/1.5 Tahoma, Arial, "Microsoft YaHei UI", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+.w {
+    width: 1080px;
+    /*居中*/
+    margin: 0 auto;
+    /*overFlow超出边界不显示，清除浮动*/
+    overflow: hidden;
+    /*如盒子中有需要定位的，以当前盒子为定位标准*/
+    position: relative;
+}
+
+/*大的浏览器，重新定义宽度*/
+/*.label .w{*/
+/*    width: 1600px;*/
+/*}*/
+
+/*全局通用样式*/
+.hide {
+    display: none;
+}
+
+/*超级链接的通用样式*/
+.link {
+    color: #999;
+    /*手的图标*/
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ffffff;
+}
+
+.link-text {
+    color: #999;
+    text-decoration: none;
+}
+
+/*btn按钮*/
+.btn {
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #FF6633;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn-mini {
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.loading {
+    margin: 10px auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6;
+}

@@ -44,12 +44,18 @@ eco-portal
 （10）安装html-loader ：npm install html-loader --save-dev
        解决：html页面通用的抽取，通过<%=require('html-loader!./layout/html-head.html')%>方式引入
        
-  (11)处理文字和图片引入：    npm install url-loader --save-dev    
+  (11)处理文字和图片引入：    npm install file-loader --save-dev    
   module-loaders中： 
-   { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]' },
+   { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'file-loader?limit=100&name=resource/[name].[ext]' },
 
  （12）webpack-server-dev :npm install webpack-dev-server@1.16.5 --save-dev
     作用是：使用webpack的服务器，可以自动编译
     webpack-dev-server
+    webpack-dev-server --inline --port 8088
+    
+（13）渲染HTML模板的插件
+       npm install hogan --save      (不使用--save-dev，因为需要在代码里使用，不是仅限于开发)
+（14）安装icon-font 
+      npm install font-awesome --save
   
   
